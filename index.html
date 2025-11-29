@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Banker's Algorithm</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    
+    <body>
+
+        <h1>Banker's Algorithm</h1>
+
+        <div id="wrapper">
+            <div id="inputs">
+                <p>Process : <input type="number" id="ProcessNum"></p>
+                <p>Resource : <input type="number" id="ResourceNum"></p>
+            </div>
+
+            <div id="buttons">
+                <input type="button" id="createTables" value="Create Table" onclick="createTables()"><br>
+                <input type="button" id="findNeedandAvailable" value="Find need & available" onclick="findNeedandAvailable()" disabled>
+                &nbsp;&nbsp;&nbsp; 
+                <input type="button" id="checkSafety" value="Check Safe state" onclick="checkAndGenerateSafeSeq()" disabled><br>
+                <input type="button" id="reset" value="Reset" onclick="reset()">
+
+            </div>
+        </div>
+
+        <div id="allTables" style="visibility:hidden"></div>
+        <button id="scrollTopButton" onclick="scrollToTop()"></button>
+
+    </body>
+</html>
